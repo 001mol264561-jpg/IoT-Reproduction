@@ -1,7 +1,7 @@
 # IoT-Reproduction
 # Reproduction Report: IoT Device Identification and Classification Models
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
 ![Dataset](https://img.shields.io/badge/Dataset-ToN__IoT-green)
 
@@ -16,10 +16,10 @@ This repository contains the reproduction of the following models:
 * **IPFIX Records (Okui et al.):** Identifying device models in home domains using service-based aggregation of flow records.
 
 ## 3. Environment Setup
-To run the reproduction notebooks, ensure you have Python 3.8+ installed.
+To run the reproduction notebooks, ensure you have Python 3.12 installed.
 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/IoT-Identification-Reproduction.git](https://github.com/your-username/IoT-Identification-Reproduction.git)
-   cd IoT-Identification-Reproduction
+   git clone [https://github.com/001mol264561-jpg/IoT-Reproduction.git](https://github.com/001mol264561-jpg/IoTReproduction.git)
+   cd IoT-Reproduction
