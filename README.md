@@ -1,4 +1,3 @@
-# IoT-Reproduction
 # Reproduction Report: IoT Device Identification and Classification Models
 
 ![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
@@ -31,17 +30,25 @@ To run the reproduction notebooks, ensure you have Python 3.12 installed.
    cd IoT-Reproduction
 
 2. Create a virtual environment and install dependencies
-  ```bash  
-  conda create -n iot_reproduce python=3.12
-  conda activate iot_reproduce
-  pip install -r requirements.txt
+   ```bash  
+   conda create -n iot_reproduce python=3.12
+   conda activate iot_reproduce
+   pip install -r requirements.txt
+   
+## 4. Dataset preparation
+Due to storage capacity, this project does not include the original dataset. Please go to the official ToN_IoT platform to download the data.
+https://research.unsw.edu.au/projects/toniot-datasets
+
+## 5. Reproduction Guide
+Enter the directory, interactively open the corresponding notebook and run it. Each notebook contains detailed Markdown comments that break down the steps of feature engineering and model evaluation.
+| Notebook | Core Technology Path | feature |
+|---|---|---|
+| 01_meidan_denat | IP Blinding+LightGBM Stream Level Classification | Accurately identify internal vulnerable assets through NAT |
+| 02_Okui_IPFIX_Aggregation | 15 minute window+business port expansion | High Interpretability |
+| 03_Sivanathan_Behavioral_Profiling | Sleep cycle calculation | Identify high imitation/similar devices through long-term behavioral image recognition |
+| 04_Pinheiro_Packet_Length | 1-second window statistics+random forest | Anti encryption, precise and lightweight, millisecond response |
+| 05_Yang_Semantic | Pyshark(DPI) + TF-IDF + MLP | Identifying specific manufacturers and models |
+| 06_Fan_AutoIoT_SemiSupervised | CNN extraction+KS test | Automatically discover new devices, Semi-supervised evolution |
 
 
-#### Reproduction Guide
-笔记本文件,核心技术路径,亮点/解决的痛点
-04_Pinheiro_Packet_Length.ipynb,1秒窗口统计+随机森林,抗加密，精准轻量，毫秒级响应。
-01_Meidan_DeNAT.ipynb,IP盲化+LightGBM流级分类,通过NAT，精准识别内部脆弱资产。
-02_Okui_IPFIX_Aggregation.ipynb,15分钟窗口 + 业务端口展开,强解释性，对设备小巩固增强免疫力。
-03_Sivanathan_Profiling.ipynb,1小时窗口+休眠周期计算,通过长期行为图像识别高仿/相似设备。
-05_Yang_Semantic_Fingerprinting.ipynb,Pyshark(DPI) + TF-IDF + MLP,细粒度极高，识别具体到制造商和型号。
-06_Fan_AutoIoT_SemiSupervised.ipynb,CNN提取+ KS检验,自动发现新设备，半监督引人注目的自演进。
+
